@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+         <!-- Announcement Bar -->
+<div class="travel-annbar1" role="region" aria-label="Contact & Social">
+  <div class="travel-annbar1__inner">
+    <div class="travel-annbar1__left">
+      <a class="travel-annbar1__item" href="tel:+919876543210">
+        <i class="fa-solid fa-phone"></i> +91 98765 43210
+      </a>
+      <span class="travel-annbar1__sep">•</span>
+      <a class="travel-annbar1__item" href="mailto:sales@yourbrand.com">
+        <i class="fa-solid fa-envelope"></i> sales@yourbrand.com
+      </a>
+    </div>
+
+    <div class="travel-annbar1__right" aria-label="Social links">
+      <a class="travel-annbar1__social" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a class="travel-annbar1__social" href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a class="travel-annbar1__social" href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+      <a class="travel-annbar1__social" href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+    <header class="travel-header1" aria-label="Site Header">
+  <div class="travel-header1__inner">
+    <a href="/" class="travel-header1__logo" aria-label="Brand Home">
+      ✈️ Travelio
+    </a>
+
+    <!-- Hamburger (mobile) -->
+    <button class="travel-header1__hamburger" id="th1-hamburger"
+            aria-label="Open menu" aria-controls="th1-nav" aria-expanded="false">
+      <span class="travel-header1__hamburger-line"></span>
+    </button>
+
+    <!-- Nav (desktop + mobile off-canvas) -->
+<nav class="travel-header1__nav" id="th1-nav" aria-label="Primary">
+  <ul class="travel-header1__menu">
+    <!-- Add aria-current="page" OR class="is-active" on current page -->
+    <li>
+      <a href="index.html" >
+        <i class="fa-solid fa-house" aria-hidden="true"></i><span>Home</span>
+      </a>
+    </li>
+    <li>
+      <a href="about-us.html">
+        <i class="fa-solid fa-user-group" aria-hidden="true"></i><span>About&nbsp;Us</span>
+      </a>
+    </li>
+    <li>
+      <a href="packages.html" class="is-active" aria-current="page">
+        <i class="fa-solid fa-suitcase-rolling" aria-hidden="true"></i><span>Packages</span>
+      </a>
+    </li>
+    <li>
+      <a href="contact-us.html">
+        <i class="fa-solid fa-headset" aria-hidden="true"></i><span>Contact</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+  </div>
+
+  <!-- Screen overlay for mobile menu -->
+  <div class="travel-header1__overlay" id="th1-overlay" hidden></div>
+</header>
+<!-- banner section  -->
+ <section class="package-banner" style="--bg:url('/image/manu-mateo-57-Bww7Faoo-unsplash.jpg')" aria-label="Packages banner" loading="lazy" decoding="async">
+  <div class="package-banner__overlay"></div>
+
+  <div class="package-banner__inner">
+    <p class="package-banner__eyebrow">Packages</p>
+    <h1 class="package-banner__title">Handpicked packages for every kind of traveller</h1>
+    <p class="package-banner__sub">Domestic • International • Weekend getaways</p>
+
+    <div class="package-banner__actions">
+      <a href="packages.html" class="package-banner__btn">Explore packages</a>
+      <a href="contact-us.html" class="package-banner__link">Talk to a planner →</a>
+    </div>
+  </div>
+</section>
+
+<!-- section 1 -->
+ <section class="package-section1" id="all-packages" aria-labelledby="ps1-title">
+  <div class="package-section1__container">
+    <header class="package-section1__header">
+      <p class="package-section1__eyebrow">Packages</p>
+      <h2 id="ps1-title" class="package-section1__title">All travel packages</h2>
+      <p class="package-section1__sub">Domestic • International • Weekend • Honeymoon • Family • Adventure</p>
+    </header>
+
+    <!-- Filters -->
+    <div class="package-section1__controls" role="toolbar" aria-label="Package filters">
+      <div class="package-section1__filters">
+        <button class="ps1-filter is-active" data-filter="all">All</button>
+        <button class="ps1-filter" data-filter="domestic">Domestic</button>
+        <button class="ps1-filter" data-filter="international">International</button>
+        <button class="ps1-filter" data-filter="weekend">Weekend</button>
+        <button class="ps1-filter" data-filter="honeymoon">Honeymoon</button>
+        <button class="ps1-filter" data-filter="family">Family</button>
+        <button class="ps1-filter" data-filter="adventure">Adventure</button>
+      </div>
+      <!-- (Optional) Search -->
+      <label class="package-section1__search">
+        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+        <input type="search" id="ps1-search" placeholder="Search destination or package…">
+      </label>
+    </div>
+
+    <!-- Grid -->
+    <div class="package-section1__grid" id="ps1-grid">
+
+      <!-- Card: Goa (Domestic / Weekend) -->
+      <article class="ps1-card" data-cat="domestic weekend">
+        <figure class="ps1-media">
+          <img src="/image/packages/goa-beach.jpg" alt="Goa beach escape" loading="lazy" decoding="async">
+          <span class="ps1-badge">Best Seller</span>
+          <span class="ps1-price">From ₹18,999</span>
+        </figure>
+        <div class="ps1-body">
+          <h3 class="ps1-title">Goa Beach Escape</h3>
+          <p class="ps1-meta"><i class="fa-solid fa-location-dot"></i> Goa, India • <i class="fa-solid fa-clock"></i> 4D/3N</p>
+          <p class="ps1-tags"><span>Domestic</span><span>Weekend</span><span>Beach</span></p>
+          <p class="ps1-rating" aria-label="4.8 out of 5">★★★★☆ 4.8</p>
+          <div class="ps1-cta">
+            <a href="/packages/goa" class="ps1-btn">View details</a>
+            <a href="/contact" class="ps1-link">Get quote →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card: Himachal Trek (Domestic / Adventure) -->
+      <article class="ps1-card" data-cat="domestic adventure">
+        <figure class="ps1-media">
+          <img src="/image/packages/Himachal Himalayan Trek.jpg" alt="Himachal trek" loading="lazy" decoding="async">
+          <span class="ps1-price">From ₹22,499</span>
+        </figure>
+        <div class="ps1-body">
+          <h3 class="ps1-title">Himachal Himalayan Trek</h3>
+          <p class="ps1-meta"><i class="fa-solid fa-location-dot"></i> Manali & Beyond • <i class="fa-solid fa-clock"></i> 6D/5N</p>
+          <p class="ps1-tags"><span>Domestic</span><span>Adventure</span><span>Trek</span></p>
+          <p class="ps1-rating">★★★★★ 4.9</p>
+          <div class="ps1-cta">
+            <a href="/packages/himachal-trek" class="ps1-btn">View details</a>
+            <a href="/contact" class="ps1-link">Get quote →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card: Rajasthan Heritage (Domestic / Family) -->
+      <article class="ps1-card" data-cat="domestic family">
+        <figure class="ps1-media">
+          <img src="/image/packages/Rajasthan Heritage.jpg" alt="Rajasthan heritage" loading="lazy" decoding="async">
+          <span class="ps1-price">From ₹25,999</span>
+        </figure>
+        <div class="ps1-body">
+          <h3 class="ps1-title">Rajasthan Heritage Trail</h3>
+          <p class="ps1-meta"><i class="fa-solid fa-location-dot"></i> Jaipur–Jodhpur–Udaipur • <i class="fa-solid fa-clock"></i> 6D/5N</p>
+          <p class="ps1-tags"><span>Domestic</span><span>Family</span><span>Culture</span></p>
+          <p class="ps1-rating">★★★★☆ 4.7</p>
+          <div class="ps1-cta">
+            <a href="/packages/rajasthan" class="ps1-btn">View details</a>
+            <a href="/contact" class="ps1-link">Get quote →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card: Rishikesh Weekend (Domestic / Weekend / Adventure) -->
+      <article class="ps1-card" data-cat="domestic weekend adventure">
+        <figure class="ps1-media">
+          <img src="/image/packages/Rishikesh Adventure.jpg" alt="Rishikesh adventure weekend" loading="lazy" decoding="async">
+          <span class="ps1-price">From ₹8,999</span>
+        </figure>
+        <div class="ps1-body">
+          <h3 class="ps1-title">Rishikesh Adventure Weekend</h3>
+          <p class="ps1-meta"><i class="fa-solid fa-location-dot"></i> Rishikesh • <i class="fa-solid fa-clock"></i> 3D/2N</p>
+          <p class="ps1-tags"><span>Weekend</span><span>Adventure</span><span>River</span></p>
+          <p class="ps1-rating">★★★★☆ 4.6</p>
+          <div class="ps1-cta">
+            <a href="/packages/rishikesh" class="ps1-btn">View details</a>
+            <a href="/contact" class="ps1-link">Get quote →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card: Bali Bliss (International / Honeymoon) -->
+      <article class="ps1-card" data-cat="international honeymoon">
+        <figure class="ps1-media">
+          <img src="/image/packages/Bali Bliss.jpg" alt="Bali honeymoon" loading="lazy" decoding="async">
+          <span class="ps1-badge">Honeymoon Fav</span>
+          <span class="ps1-price">From ₹48,999</span>
+        </figure>
+        <div class="ps1-body">
+          <h3 class="ps1-title">Bali Bliss (Pool Villas)</h3>
+          <p class="ps1-meta"><i class="fa-solid fa-location-dot"></i> Bali, Indonesia • <i class="fa-solid fa-clock"></i> 5D/4N</p>
+          <p class="ps1-tags"><span>International</span><span>Honeymoon</span><span>Beach</span></p>
+          <p class="ps1-rating">★★★★★ 4.9</p>
+          <div class="ps1-cta">
+            <a href="/packages/bali" class="ps1-btn">View details</a>
+            <a href="/contact" class="ps1-link">Get quote →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card: Dubai City Break (International / Family) -->
+      <article class="ps1-card" data-cat="international family">
+        <figure class="ps1-media">
+          <img src="/image/packages/Dubai City.jpg" alt="Dubai city break" loading="lazy" decoding="async">
+          <span class="ps1-price">From ₹39,999</span>
+        </figure>
+        <div class="ps1-body">
+          <h3 class="ps1-title">Dubai City Break</h3>
+          <p class="ps1-meta"><i class="fa-solid fa-location-dot"></i> Dubai, UAE • <i class="fa-solid fa-clock"></i> 5D/4N</p>
+          <p class="ps1-tags"><span>International</span><span>Family</span><span>City</span></p>
+          <p class="ps1-rating">★★★★☆ 4.7</p>
+          <div class="ps1-cta">
+            <a href="/packages/dubai" class="ps1-btn">View details</a>
+            <a href="/contact" class="ps1-link">Get quote →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card: Thailand Island Hop (International / Adventure) -->
+      <article class="ps1-card" data-cat="international adventure">
+        <figure class="ps1-media">
+          <img src="/image/packages/Thailand Island.jpg" alt="Thailand island hop" loading="lazy" decoding="async">
+          <span class="ps1-price">From ₹44,499</span>
+        </figure>
+        <div class="ps1-body">
+          <h3 class="ps1-title">Thailand Island Hop</h3>
+          <p class="ps1-meta"><i class="fa-solid fa-location-dot"></i> Phuket–Krabi–Phi Phi • <i class="fa-solid fa-clock"></i> 6D/5N</p>
+          <p class="ps1-tags"><span>International</span><span>Adventure</span><span>Islands</span></p>
+          <p class="ps1-rating">★★★★☆ 4.6</p>
+          <div class="ps1-cta">
+            <a href="/packages/thailand" class="ps1-btn">View details</a>
+            <a href="/contact" class="ps1-link">Get quote →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card: Maldives Overwater (International / Honeymoon / Luxury) -->
+      <article class="ps1-card" data-cat="international honeymoon luxury">
+        <figure class="ps1-media">
+          <img src="/image/packages/Maldives.jpg" alt="Maldives overwater villas" loading="lazy" decoding="async">
+          <span class="ps1-badge">Luxury</span>
+          <span class="ps1-price">From ₹99,999</span>
+        </figure>
+        <div class="ps1-body">
+          <h3 class="ps1-title">Maldives Overwater Villas</h3>
+          <p class="ps1-meta"><i class="fa-solid fa-location-dot"></i> Maldives • <i class="fa-solid fa-clock"></i> 5D/4N</p>
+          <p class="ps1-tags"><span>International</span><span>Honeymoon</span><span>Luxury</span></p>
+          <p class="ps1-rating">★★★★★ 5.0</p>
+          <div class="ps1-cta">
+            <a href="/packages/maldives" class="ps1-btn">View details</a>
+            <a href="/contact" class="ps1-link">Get quote →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card: Singapore Family Fun (International / Family) -->
+      <article class="ps1-card" data-cat="international family">
+        <figure class="ps1-media">
+          <img src="/image/packages/Singapore Family.jpg" alt="Singapore family fun" loading="lazy" decoding="async">
+          <span class="ps1-price">From ₹52,999</span>
+        </figure>
+        <div class="ps1-body">
+          <h3 class="ps1-title">Singapore Family Fun</h3>
+          <p class="ps1-meta"><i class="fa-solid fa-location-dot"></i> Singapore • <i class="fa-solid fa-clock"></i> 5D/4N</p>
+          <p class="ps1-tags"><span>International</span><span>Family</span><span>Theme Parks</span></p>
+          <p class="ps1-rating">★★★★☆ 4.7</p>
+          <div class="ps1-cta">
+            <a href="/packages/singapore" class="ps1-btn">View details</a>
+            <a href="/contact" class="ps1-link">Get quote →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card: Kashmir (Domestic / Family) -->
+      <article class="ps1-card" data-cat="domestic family">
+        <figure class="ps1-media">
+          <img src="/image/packages/Kashmir Valleys.jpg" alt="Kashmir valleys" loading="lazy" decoding="async">
+          <span class="ps1-price">From ₹27,999</span>
+        </figure>
+        <div class="ps1-body">
+          <h3 class="ps1-title">Kashmir Valleys & Lakes</h3>
+          <p class="ps1-meta"><i class="fa-solid fa-location-dot"></i> Srinagar–Gulmarg–Pahalgam • <i class="fa-solid fa-clock"></i> 6D/5N</p>
+          <p class="ps1-tags"><span>Domestic</span><span>Family</span><span>Nature</span></p>
+          <p class="ps1-rating">★★★★★ 4.8</p>
+          <div class="ps1-cta">
+            <a href="/packages/kashmir" class="ps1-btn">View details</a>
+            <a href="/contact" class="ps1-link">Get quote →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card: Kerala Backwaters (Domestic / Family / Honeymoon) -->
+      <article class="ps1-card" data-cat="domestic family honeymoon">
+        <figure class="ps1-media">
+          <img src="/image/packages/Kerala Backwaters.jpg" alt="Kerala backwaters" loading="lazy" decoding="async">
+          <span class="ps1-price">From ₹23,499</span>
+        </figure>
+        <div class="ps1-body">
+          <h3 class="ps1-title">Kerala Backwaters & Munnar</h3>
+          <p class="ps1-meta"><i class="fa-solid fa-location-dot"></i> Kochi–Alleppey–Munnar • <i class="fa-solid fa-clock"></i> 6D/5N</p>
+          <p class="ps1-tags"><span>Domestic</span><span>Family</span><span>Honeymoon</span></p>
+          <p class="ps1-rating">★★★★★ 4.9</p>
+          <div class="ps1-cta">
+            <a href="/packages/kerala" class="ps1-btn">View details</a>
+            <a href="/contact" class="ps1-link">Get quote →</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Load more (optional if you have more items) -->
+    <div class="package-section1__more">
+  <button class="ps1-more" id="ps1-more" type="button">Read more</button>
+</div>
+
+<!-- No results msg (optional) -->
+<p id="ps1-empty" class="ps1-empty" style="display:none;">No packages match your filters.</p>
+  </div>
+</section>
+
+<!-- section 2 -->
+<section class="package-section2" aria-labelledby="ps2-title">
+  <div class="package-section2__container">
+    <header class="package-section2__header">
+      <p class="package-section2__eyebrow">Curated for you</p>
+      <h2 id="ps2-title" class="package-section2__title">Browse by theme</h2>
+      <p class="package-section2__sub">Quickly jump to the packages that fit your vibe.</p>
+    </header>
+
+    <div class="package-section2__grid">
+      <!-- Honeymoon -->
+      <article class="ps2-card" style="--img:url('/image/packages/Maldives.jpg')" loading="lazy" decoding="async">
+        <span class="ps2-card__icon"><i class="fa-solid fa-heart"></i></span>
+        <span class="ps2-card__chip">24 trips</span>
+        <div class="ps2-card__body">
+          <h3>Honeymoon</h3>
+          <p>Private villas • sunsets • spas</p>
+        </div>
+      </article>
+
+      <!-- Family -->
+      <article class="ps2-card" style="--img:url('/image/packages/Singapore Family.jpg')" loading="lazy" decoding="async">
+        <span class="ps2-card__icon"><i class="fa-solid fa-people-group"></i></span>
+        <span class="ps2-card__chip">31 trips</span>
+        <div class="ps2-card__body">
+          <h3>Family</h3>
+          <p>Kid-friendly stays & attractions</p>
+        </div>
+      </article>
+
+      <!-- Adventure -->
+      <article class="ps2-card" style="--img:url('/image/packages/Rishikesh Adventure.jpg') " loading="lazy" decoding="async">
+        <span class="ps2-card__icon"><i class="fa-solid fa-mountain-sun"></i></span>
+        <span class="ps2-card__chip">19 trips</span>
+        <div class="ps2-card__body">
+          <h3>Adventure</h3>
+          <p>Trekking • rafting • dives</p>
+        </div>
+      </article>
+
+      <!-- Weekend -->
+      <article class="ps2-card" style="--img:url('/image/packages/Rajasthan Heritage.jpg')" loading="lazy" decoding="async">
+        <span class="ps2-card__icon"><i class="fa-solid fa-mug-hot"></i></span>
+        <span class="ps2-card__chip">16 trips</span>
+        <div class="ps2-card__body">
+          <h3>Weekend</h3>
+          <p>Short breaks, near your city</p>
+        </div>
+      </article>
+
+      <!-- Luxury -->
+      <article class="ps2-card" style="--img:url('/image/packages/Thailand Island.jpg')" loading="lazy" decoding="async">
+        <span class="ps2-card__icon"><i class="fa-solid fa-gem"></i></span>
+        <span class="ps2-card__chip">12 trips</span>
+        <div class="ps2-card__body">
+          <h3>Luxury</h3>
+          <p>5★ resorts • VIP transfers</p>
+        </div>
+      </article>
+
+      <!-- Pilgrimage -->
+      <article class="ps2-card" style="--img:url('/image/ChatGPT Image Aug 25, 2025, 11_13_01 AM.png')" loading="lazy" decoding="async">
+        <span class="ps2-card__icon"><i class="fa-solid fa-om"></i></span>
+        <span class="ps2-card__chip">14 trips</span>
+        <div class="ps2-card__body">
+          <h3>Pilgrimage</h3>
+          <p>Char Dham • Varanasi • Puri</p>
+        </div>
+      </article>
+    </div>
+
+    <!-- tiny trust row -->
+    <div class="package-section2__trust">
+      <span><i class="fa-solid fa-shield-heart"></i> Trusted planners</span>
+      <span><i class="fa-solid fa-star"></i> 4.9★ rating</span>
+      <span><i class="fa-solid fa-globe"></i> 50+ destinations</span>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- footer section -->
+ <footer class="footer-section" aria-labelledby="footer-title">
+  <div class="footer-section__inner">
+    <h2 id="footer-title" class="footer-section__visuallyhidden">Site Footer</h2>
+
+    <div class="footer-section__grid">
+      <!-- Brand -->
+      <div class="footer-section__brand">
+        <!-- Logo -->
+        <!-- <img src="/images/logo-light.svg" alt="YourBrand" class="footer-section__logo"> -->
+        <div class="footer-section__logo">✈️ Travelio</div>
+
+        <p class="footer-section__intro">
+          Handpicked destinations, transparent pricing and 24×7 on-trip support.
+          We plan trips you’ll talk about for years.
+        </p>
+
+        <div class="footer-section__social" aria-label="Social media">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Links 1 -->
+      <nav class="footer-section__col" aria-label="Company">
+        <h3 class="footer-section__heading">Company</h3>
+        <ul class="footer-section__list">
+            <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About us</a></li>
+          
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="contact-us.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Links 2 -->
+      <nav class="footer-section__col" aria-label="Support">
+        <h3 class="footer-section__heading">Support</h3>
+        <ul class="footer-section__list">
+          <li><a href="/faq">FAQs</a></li>
+          <li><a href="/booking-policy">Booking policy</a></li>
+          <li><a href="/cancellation">Cancellation</a></li>
+          <li><a href="/terms">Terms of service</a></li>
+          <li><a href="/privacy">Privacy policy</a></li>
+        </ul>
+      </nav>
+
+      <!-- Newsletter -->
+      <div class="footer-section__news">
+        <h3 class="footer-section__heading">Newsletter</h3>
+        <p class="footer-section__news-text">
+          Trip ideas & deals in your inbox. No spam, unsubscribe anytime.
+        </p>
+
+        <form class="footer-section__form" action="#" method="post" novalidate>
+          <label class="footer-section__field">
+            <span class="footer-section__visuallyhidden">Email address</span>
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit" class="footer-section__btn">Subscribe</button>
+          </label>
+          <small class="footer-section__hint">We respect your privacy.</small>
+        </form>
+
+        <div class="footer-section__pay" aria-label="Payment methods">
+          <i class="fa-brands fa-cc-visa" aria-hidden="true"></i>
+          <i class="fa-brands fa-cc-mastercard" aria-hidden="true"></i>
+          <i class="fa-brands fa-cc-amex" aria-hidden="true"></i>
+          <i class="fa-brands fa-cc-paypal" aria-hidden="true"></i>
+          <!-- Add/remove as needed -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="footer-section__bar">
+      <p>© 2025 Travelio. All rights reserved.</p>
+      <ul class="footer-section__barlinks">
+        <li><a href="/privacy">Privacy</a></li>
+        <li><a href="/terms">Terms</a></li>
+        <li><a href="/sitemap.xml">Sitemap</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  const root     = document.querySelector('.package-section1');
+  const grid     = document.getElementById('ps1-grid');
+  const filters  = root.querySelectorAll('.ps1-filter');
+  const searchEl = document.getElementById('ps1-search');
+  const moreBtn  = document.getElementById('ps1-more');
+  const emptyMsg = document.getElementById('ps1-empty');
+
+  if(!root || !grid) return;
+
+  const cards = Array.from(grid.querySelectorAll('.ps1-card'));
+  let currentFilter = 'all';
+  let pageSize = 8;           // initially show 8
+  let shown = pageSize;
+
+  function matchFilter(card){
+    if(currentFilter === 'all') return true;
+    const cats = (card.getAttribute('data-cat') || '').toLowerCase().split(/\s+/);
+    return cats.includes(currentFilter);
+  }
+  function matchSearch(card){
+    const q = (searchEl?.value || '').trim().toLowerCase();
+    if(!q) return true;
+    return card.innerText.toLowerCase().includes(q);
+  }
+
+  function render(){
+    let visibleCount = 0;
+    const eligible = cards.filter(c => matchFilter(c) && matchSearch(c));
+
+    // show/hide with progressive limit
+    cards.forEach(c => c.style.display = 'none');
+    eligible.slice(0, shown).forEach(c => {
+      c.style.display = '';
+      // small fade-in
+      c.style.opacity = 0;
+      requestAnimationFrame(() => {
+        c.style.transition = 'opacity .18s ease';
+        c.style.opacity = 1;
+      });
+    });
+
+    visibleCount = Math.min(shown, eligible.length);
+
+    // empty state
+    if(emptyMsg){
+      emptyMsg.style.display = eligible.length === 0 ? '' : 'none';
+    }
+
+    // read more visibility
+    if(moreBtn){
+      moreBtn.style.display = eligible.length > visibleCount ? '' : 'none';
+    }
+  }
+
+  // Init render
+  render();
+
+  // Filter clicks (event delegation safe)
+  filters.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      filters.forEach(b => b.classList.remove('is-active'));
+      e.currentTarget.classList.add('is-active');
+      currentFilter = e.currentTarget.dataset.filter || 'all';
+      shown = pageSize;      // reset page size on filter change
+      render();
+    });
+  });
+
+  // Search
+  if(searchEl){
+    // prevent Enter from submitting any parent form
+    searchEl.addEventListener('keydown', (e) => { if(e.key === 'Enter') e.preventDefault(); });
+    searchEl.addEventListener('input', () => { shown = pageSize; render(); });
+  }
+
+  // Read more
+  if(moreBtn){
+    moreBtn.addEventListener('click', () => {
+      shown += pageSize;     // reveal next batch
+      render();
+    });
+  }
+});
+</script>
+
+<!-- fontawesome js -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css">
+
+,<script src="script.js"></script>
+</body>
+</html>
