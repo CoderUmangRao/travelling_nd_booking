@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 </head>
 <body>
          <!-- Announcement Bar -->
@@ -32,9 +33,9 @@
 </div>
 
 <!-- Header -->
-    <header class="travel-header1" aria-label="Site Header">
+    <header class="travel-header1" aria-label="Site Header" >
   <div class="travel-header1__inner">
-    <a href="/" class="travel-header1__logo" aria-label="Brand Home">
+    <a href="index.html" class="travel-header1__logo" aria-label="Brand Home">
       ✈️ Travelio
     </a>
 
@@ -76,8 +77,9 @@
   <!-- Screen overlay for mobile menu -->
   <div class="travel-header1__overlay" id="th1-overlay" hidden></div>
 </header>
+
 <!-- banner section  -->
- <section class="package-banner" style="--bg:url('/image/manu-mateo-57-Bww7Faoo-unsplash.jpg')" aria-label="Packages banner" loading="lazy" decoding="async">
+ <section class="package-banner" style="--bg:url('/image/manu-mateo-57-Bww7Faoo-unsplash.jpg')" aria-label="Packages banner" loading="lazy" decoding="async" data-aos="zoom-in" data-aos-duration="1000">
   <div class="package-banner__overlay"></div>
 
   <div class="package-banner__inner">
@@ -96,21 +98,21 @@
  <section class="package-section1" id="all-packages" aria-labelledby="ps1-title">
   <div class="package-section1__container">
     <header class="package-section1__header">
-      <p class="package-section1__eyebrow">Packages</p>
-      <h2 id="ps1-title" class="package-section1__title">All travel packages</h2>
-      <p class="package-section1__sub">Domestic • International • Weekend • Honeymoon • Family • Adventure</p>
+      <p class="package-section1__eyebrow" data-aos="zoom-in" data-aos-duration="1000">Packages</p>
+      <h2 id="ps1-title" class="package-section1__title" data-aos="zoom-in" data-aos-duration="1500">All travel packages</h2>
+      <p class="package-section1__sub" data-aos="zoom-in" data-aos-duration="2000">Domestic • International • Weekend • Honeymoon • Family • Adventure</p>
     </header>
 
     <!-- Filters -->
     <div class="package-section1__controls" role="toolbar" aria-label="Package filters">
       <div class="package-section1__filters">
-        <button class="ps1-filter is-active" data-filter="all">All</button>
-        <button class="ps1-filter" data-filter="domestic">Domestic</button>
-        <button class="ps1-filter" data-filter="international">International</button>
-        <button class="ps1-filter" data-filter="weekend">Weekend</button>
-        <button class="ps1-filter" data-filter="honeymoon">Honeymoon</button>
-        <button class="ps1-filter" data-filter="family">Family</button>
-        <button class="ps1-filter" data-filter="adventure">Adventure</button>
+        <button class="ps1-filter is-active" data-filter="all" data-aos="zoom-in" data-aos-duration="1300">All</button>
+        <button class="ps1-filter" data-filter="domestic" data-aos="zoom-in" data-aos-duration="1600">Domestic</button>
+        <button class="ps1-filter" data-filter="international" data-aos="zoom-in" data-aos-duration="1900">International</button>
+        <button class="ps1-filter" data-filter="weekend" data-aos="zoom-in" data-aos-duration="2100">Weekend</button>
+        <button class="ps1-filter" data-filter="honeymoon" data-aos="zoom-in" data-aos-duration="2400">Honeymoon</button>
+        <button class="ps1-filter" data-filter="family" data-aos="zoom-in" data-aos-duration="2700">Family</button>
+        <button class="ps1-filter" data-filter="adventure" data-aos="zoom-in" data-aos-duration="3000">Adventure</button>
       </div>
       <!-- (Optional) Search -->
       <label class="package-section1__search">
@@ -123,7 +125,7 @@
     <div class="package-section1__grid" id="ps1-grid">
 
       <!-- Card: Goa (Domestic / Weekend) -->
-      <article class="ps1-card" data-cat="domestic weekend">
+      <article class="ps1-card" data-cat="domestic weekend" data-aos="zoom-in" data-aos-duration="1000">
         <figure class="ps1-media">
           <img src="/image/packages/goa-beach.jpg" alt="Goa beach escape" loading="lazy" decoding="async">
           <span class="ps1-badge">Best Seller</span>
@@ -142,7 +144,7 @@
       </article>
 
       <!-- Card: Himachal Trek (Domestic / Adventure) -->
-      <article class="ps1-card" data-cat="domestic adventure">
+      <article class="ps1-card" data-cat="domestic adventure" data-aos="zoom-in" data-aos-duration="1500">
         <figure class="ps1-media">
           <img src="/image/packages/Himachal Himalayan Trek.jpg" alt="Himachal trek" loading="lazy" decoding="async">
           <span class="ps1-price">From ₹22,499</span>
@@ -160,7 +162,7 @@
       </article>
 
       <!-- Card: Rajasthan Heritage (Domestic / Family) -->
-      <article class="ps1-card" data-cat="domestic family">
+      <article class="ps1-card" data-cat="domestic family" data-aos="zoom-in" data-aos-duration="2000">
         <figure class="ps1-media">
           <img src="/image/packages/Rajasthan Heritage.jpg" alt="Rajasthan heritage" loading="lazy" decoding="async">
           <span class="ps1-price">From ₹25,999</span>
@@ -178,7 +180,7 @@
       </article>
 
       <!-- Card: Rishikesh Weekend (Domestic / Weekend / Adventure) -->
-      <article class="ps1-card" data-cat="domestic weekend adventure">
+      <article class="ps1-card" data-cat="domestic weekend adventure" data-aos="zoom-in" data-aos-duration="2500">
         <figure class="ps1-media">
           <img src="/image/packages/Rishikesh Adventure.jpg" alt="Rishikesh adventure weekend" loading="lazy" decoding="async">
           <span class="ps1-price">From ₹8,999</span>
@@ -196,7 +198,7 @@
       </article>
 
       <!-- Card: Bali Bliss (International / Honeymoon) -->
-      <article class="ps1-card" data-cat="international honeymoon">
+      <article class="ps1-card" data-cat="international honeymoon" data-aos="zoom-in" data-aos-duration="3000">
         <figure class="ps1-media">
           <img src="/image/packages/Bali Bliss.jpg" alt="Bali honeymoon" loading="lazy" decoding="async">
           <span class="ps1-badge">Honeymoon Fav</span>
@@ -215,7 +217,7 @@
       </article>
 
       <!-- Card: Dubai City Break (International / Family) -->
-      <article class="ps1-card" data-cat="international family">
+      <article class="ps1-card" data-cat="international family" data-aos="zoom-in" data-aos-duration="3500">
         <figure class="ps1-media">
           <img src="/image/packages/Dubai City.jpg" alt="Dubai city break" loading="lazy" decoding="async">
           <span class="ps1-price">From ₹39,999</span>
@@ -233,7 +235,7 @@
       </article>
 
       <!-- Card: Thailand Island Hop (International / Adventure) -->
-      <article class="ps1-card" data-cat="international adventure">
+      <article class="ps1-card" data-cat="international adventure" data-aos="zoom-in" data-aos-duration="4000">
         <figure class="ps1-media">
           <img src="/image/packages/Thailand Island.jpg" alt="Thailand island hop" loading="lazy" decoding="async">
           <span class="ps1-price">From ₹44,499</span>
@@ -251,7 +253,7 @@
       </article>
 
       <!-- Card: Maldives Overwater (International / Honeymoon / Luxury) -->
-      <article class="ps1-card" data-cat="international honeymoon luxury">
+      <article class="ps1-card" data-cat="international honeymoon luxury" data-aos="zoom-in" data-aos-duration="4500">
         <figure class="ps1-media">
           <img src="/image/packages/Maldives.jpg" alt="Maldives overwater villas" loading="lazy" decoding="async">
           <span class="ps1-badge">Luxury</span>
@@ -270,7 +272,7 @@
       </article>
 
       <!-- Card: Singapore Family Fun (International / Family) -->
-      <article class="ps1-card" data-cat="international family">
+      <article class="ps1-card" data-cat="international family" data-aos="zoom-in" data-aos-duration="5000">
         <figure class="ps1-media">
           <img src="/image/packages/Singapore Family.jpg" alt="Singapore family fun" loading="lazy" decoding="async">
           <span class="ps1-price">From ₹52,999</span>
@@ -288,7 +290,7 @@
       </article>
 
       <!-- Card: Kashmir (Domestic / Family) -->
-      <article class="ps1-card" data-cat="domestic family">
+      <article class="ps1-card" data-cat="domestic family" data-aos="zoom-in" data-aos-duration="5500">
         <figure class="ps1-media">
           <img src="/image/packages/Kashmir Valleys.jpg" alt="Kashmir valleys" loading="lazy" decoding="async">
           <span class="ps1-price">From ₹27,999</span>
@@ -306,7 +308,7 @@
       </article>
 
       <!-- Card: Kerala Backwaters (Domestic / Family / Honeymoon) -->
-      <article class="ps1-card" data-cat="domestic family honeymoon">
+      <article class="ps1-card" data-cat="domestic family honeymoon" data-aos="zoom-in" data-aos-duration="6000">
         <figure class="ps1-media">
           <img src="/image/packages/Kerala Backwaters.jpg" alt="Kerala backwaters" loading="lazy" decoding="async">
           <span class="ps1-price">From ₹23,499</span>
@@ -338,7 +340,7 @@
 <!-- section 2 -->
 <section class="package-section2" aria-labelledby="ps2-title">
   <div class="package-section2__container">
-    <header class="package-section2__header">
+    <header class="package-section2__header" data-aos="zoom-in" data-aos-duration="1000">
       <p class="package-section2__eyebrow">Curated for you</p>
       <h2 id="ps2-title" class="package-section2__title">Browse by theme</h2>
       <p class="package-section2__sub">Quickly jump to the packages that fit your vibe.</p>
@@ -346,7 +348,7 @@
 
     <div class="package-section2__grid">
       <!-- Honeymoon -->
-      <article class="ps2-card" style="--img:url('/image/packages/Maldives.jpg')" loading="lazy" decoding="async">
+      <article class="ps2-card" style="--img:url('/image/packages/Maldives.jpg')" loading="lazy" decoding="async" data-aos="zoom-in" data-aos-duration="1500">
         <span class="ps2-card__icon"><i class="fa-solid fa-heart"></i></span>
         <span class="ps2-card__chip">24 trips</span>
         <div class="ps2-card__body">
@@ -356,7 +358,7 @@
       </article>
 
       <!-- Family -->
-      <article class="ps2-card" style="--img:url('/image/packages/Singapore Family.jpg')" loading="lazy" decoding="async">
+      <article class="ps2-card" style="--img:url('/image/packages/Singapore Family.jpg')" loading="lazy" decoding="async" data-aos="zoom-in" data-aos-duration="2000">
         <span class="ps2-card__icon"><i class="fa-solid fa-people-group"></i></span>
         <span class="ps2-card__chip">31 trips</span>
         <div class="ps2-card__body">
@@ -366,7 +368,7 @@
       </article>
 
       <!-- Adventure -->
-      <article class="ps2-card" style="--img:url('/image/packages/Rishikesh Adventure.jpg') " loading="lazy" decoding="async">
+      <article class="ps2-card" style="--img:url('/image/packages/Rishikesh Adventure.jpg') " loading="lazy" decoding="async" data-aos="zoom-in" data-aos-duration="2500">
         <span class="ps2-card__icon"><i class="fa-solid fa-mountain-sun"></i></span>
         <span class="ps2-card__chip">19 trips</span>
         <div class="ps2-card__body">
@@ -376,7 +378,7 @@
       </article>
 
       <!-- Weekend -->
-      <article class="ps2-card" style="--img:url('/image/packages/Rajasthan Heritage.jpg')" loading="lazy" decoding="async">
+      <article class="ps2-card" style="--img:url('/image/packages/Rajasthan Heritage.jpg')" loading="lazy" decoding="async" data-aos="zoom-in" data-aos-duration="3000">
         <span class="ps2-card__icon"><i class="fa-solid fa-mug-hot"></i></span>
         <span class="ps2-card__chip">16 trips</span>
         <div class="ps2-card__body">
@@ -386,7 +388,7 @@
       </article>
 
       <!-- Luxury -->
-      <article class="ps2-card" style="--img:url('/image/packages/Thailand Island.jpg')" loading="lazy" decoding="async">
+      <article class="ps2-card" style="--img:url('/image/packages/Thailand Island.jpg')" loading="lazy" decoding="async" data-aos="zoom-in" data-aos-duration="3500">
         <span class="ps2-card__icon"><i class="fa-solid fa-gem"></i></span>
         <span class="ps2-card__chip">12 trips</span>
         <div class="ps2-card__body">
@@ -396,7 +398,7 @@
       </article>
 
       <!-- Pilgrimage -->
-      <article class="ps2-card" style="--img:url('/image/ChatGPT Image Aug 25, 2025, 11_13_01 AM.png')" loading="lazy" decoding="async">
+      <article class="ps2-card" style="--img:url('/image/ChatGPT Image Aug 25, 2025, 11_13_01 AM.png')" loading="lazy" decoding="async" data-aos="zoom-in" data-aos-duration="4000">
         <span class="ps2-card__icon"><i class="fa-solid fa-om"></i></span>
         <span class="ps2-card__chip">14 trips</span>
         <div class="ps2-card__body">
@@ -408,9 +410,9 @@
 
     <!-- tiny trust row -->
     <div class="package-section2__trust">
-      <span><i class="fa-solid fa-shield-heart"></i> Trusted planners</span>
-      <span><i class="fa-solid fa-star"></i> 4.9★ rating</span>
-      <span><i class="fa-solid fa-globe"></i> 50+ destinations</span>
+      <span data-aos="zoom-in" data-aos-duration="1000"><i class="fa-solid fa-shield-heart"></i> Trusted planners</span>
+      <span data-aos="zoom-in" data-aos-duration="1500"><i class="fa-solid fa-star"></i> 4.9★ rating</span>
+      <span data-aos="zoom-in" data-aos-duration="2000"><i class="fa-solid fa-globe"></i> 50+ destinations</span>
     </div>
   </div>
 </section>
@@ -596,5 +598,15 @@ document.addEventListener('DOMContentLoaded', function(){
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css">
 
 ,<script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 700,          // animation time (ms)
+    easing: 'ease-out-quart',
+    offset: 80,             
+    // once: true,             
+    mirror: false           
+  });
+</script>
 </body>
 </html>
